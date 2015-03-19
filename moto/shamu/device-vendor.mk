@@ -19,6 +19,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
  CellBroadcastReceiver
 
+# Voice training
+PRODUCT_PACKAGES += \
+ TriggerEnroll \
+ TriggerTrainingService 
+
 LOCAL_STEM := shamu/device-partial.mk
 
 $(call inherit-product-if-exists, vendor/broadcom/$(LOCAL_STEM))
