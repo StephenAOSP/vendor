@@ -15,6 +15,10 @@
 PRODUCT_PACKAGES += \
     BuaContactAdapter
 
+# Apps
+PRODUCT_PACKAGES += \
+ CellBroadcastReceiver
+
 LOCAL_STEM := shamu/device-partial.mk
 
 $(call inherit-product-if-exists, vendor/broadcom/$(LOCAL_STEM))
